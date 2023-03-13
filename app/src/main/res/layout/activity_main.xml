@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/userField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_below="@id/logo"
+        android:backgroundTint="@color/backField"
+        android:layout_marginTop="100sp"
+        android:layout_marginHorizontal="50sp"
+        android:inputType="textPersonName"
+        android:hint="@string/hintUserField"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hintField" />
+    <Button
+        android:id="@+id/mainButton"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userField"
+        android:layout_marginTop="10sp"
+        android:layout_marginHorizontal="50sp"
+        android:backgroundTint="@color/button"
+        android:text="@string/mainButton"
+        android:textColor="@color/lightOrange" />
+
+    <TextView
+        android:id="@+id/resultInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainButton"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAlignment="center"
+        android:textColor="@color/hintField"
+        android:textSize="25sp" />
+
+</RelativeLayout>
