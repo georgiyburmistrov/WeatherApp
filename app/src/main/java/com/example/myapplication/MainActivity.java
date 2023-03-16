@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         protected void onPreExecute(){
             super.onPreExecute();
-            resultInfo.setText("Данные на подходе...");
+            resultInfo.setText("Мы загружеам информацию " + "\uD83C\uDF10");
         }
 
         @Override
